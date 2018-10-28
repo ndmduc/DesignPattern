@@ -1,0 +1,8 @@
+﻿<Window x:Class="Strategy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windowsTemplate="clr-namespace:WindowsTemplate;assembly=WindowsTemplate"
+        Title="MainWindow" Height="650" Width="725">
+
+    <windowsTemplate:Gui x:Name="GuiUC" ImageSource="strategy_pattern_uml_diagram.jpg" />
+</Window>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="Singleton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windowsTemplate="clr-namespace:WindowsTemplate;assembly=WindowsTemplate"
+        Title="Singleton" Height="500" Width="525">
+    
+    <windowsTemplate:Gui x:Name="GuiUC" ImageSource="singleton_pattern_uml_diagram.jpg" />
+    
+</Window>

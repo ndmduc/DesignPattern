@@ -1,0 +1,8 @@
+﻿<Window x:Class="Decorator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:windowsTemplate="clr-namespace:WindowsTemplate;assembly=WindowsTemplate"
+        Title="MainWindow" Height="350" Width="525">
+
+    <windowsTemplate:Gui Name="GuiUC" ImageSource="decorator_pattern_uml_diagram.jpg"></windowsTemplate:Gui>
+</Window>

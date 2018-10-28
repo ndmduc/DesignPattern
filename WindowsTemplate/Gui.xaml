@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="WindowsTemplate.Gui"
+             x:Name="CommonGui"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="560">
+    <Border BorderBrush="Blue" BorderThickness="0.25">
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!--Definition-->            
+            <Border Grid.Column="0" Grid.Row="0" BorderBrush="Coral" BorderThickness="0.5">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <TextBlock Name="txtDefined" Margin="6" FontSize="18" TextWrapping="Wrap"
+                               Text="{Binding DefineText, ElementName=CommonGui, UpdateSourceTrigger=PropertyChanged}">
+                    </TextBlock>
+                </ScrollViewer>
+            </Border>
+            
+            <!--Implement-->
+            <Border Grid.Column="0" Grid.Row="1" BorderBrush="Azure" BorderThickness="0.5">
+                <Image Height="387" Width="560"
+                       Source="{Binding ImageSource, ElementName=CommonGui, UpdateSourceTrigger=PropertyChanged}">
+                </Image>
+            </Border>
+            
+            <!--Result-->
+            <Border Grid.Column="0" Grid.Row="2" BorderBrush="Coral" BorderThickness="0.5">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <TextBlock Name="txtConsole" Margin="4"
+                               Text="{Binding TextBlockText, ElementName=CommonGui, UpdateSourceTrigger=PropertyChanged}"
+                               Background="SlateGray" FontSize="18" Foreground="White">
+                    </TextBlock>
+                </ScrollViewer>
+            </Border>
+
+            <!--Consequences-->
+            <Border Grid.Column="0" Grid.Row="3" BorderBrush="Coral" BorderThickness="0.5">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <TextBlock Name="txtConsequences" Margin="4"
+                               Text="{Binding TextBlockConsequence, ElementName=CommonGui, UpdateSourceTrigger=PropertyChanged}"
+                               Background="SlateGray" FontSize="18" Foreground="White">
+                    </TextBlock>
+                </ScrollViewer>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>
