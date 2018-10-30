@@ -50,6 +50,12 @@ namespace Factory
             stringBuilder.Append(shape3.Draw() + "\n");
 
             this.GuiUC.TextBlockText = stringBuilder.ToString();
+            this.GuiUC.TextBlockConsequence = @" Provides hooks for subclasses
+• Creating objects inside a class with a factory method is always more flexible than creating an object directly
+• Gives subclasses a hook for providing an extended version of an object
+ Connects parallel class hierarchies
+• In the examples we've considered so far, the factory method is only called by Creators. But this doesn't have to be the case;
+clients can find factory methods useful, especially in the case of parallel class hierarchies";
         }
     }
 }
